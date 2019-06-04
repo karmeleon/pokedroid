@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<Button
+	  	android:id="@+id/connectButton"
+	  	android:text="Connect to server..."
+	  	android:layout_height="wrap_content"
+	  	android:layout_width="fill_parent"
+	  	android:onClick="onConnectPressed"/>
+	<ScrollView
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="fill_parent">
+		  <TextView 
+		  	android:id="@+id/consoleoutput"
+		  	android:layout_height="fill_parent"
+		  	android:layout_width="fill_parent"/>
+	</ScrollView>
+</LinearLayout>

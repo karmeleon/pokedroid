@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+  
+      <LinearLayout
+    	android:layout_height="160dp"
+    	android:layout_width="fill_parent"
+    	android:orientation="horizontal">
+    	
+    	<LinearLayout
+    		android:orientation="vertical"
+    		android:layout_width="128dp"
+    		android:layout_height="fill_parent">
+    		
+    		<ImageView
+    			android:layout_height="128dp"
+    			android:layout_width="128dp"
+    			android:scaleType="fitXY"
+    			android:src="@drawable/nixon"
+    			android:id="@+id/targetViewer"/>
+    		
+    		<TextView
+    			android:layout_height="12dp"
+    			android:textSize="11sp"
+    			android:layout_width="fill_parent"
+    			android:id="@+id/customidno"
+    			android:text="#9001"/>
+    			
+    	</LinearLayout>
+    	
+    	<LinearLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:background="#000000"
+    		android:orientation="vertical">
+    		
+    		<TextView
+    			android:layout_width="fill_parent"
+    			android:layout_height="18dp"
+    			android:text="RICHARD NIXON"
+    			android:id="@+id/customizername"/>
+    			
+    		<TextView
+    			android:layout_width="fill_parent"
+    			android:layout_height="13dp"
+    			android:text="BADASS TYPE"
+    			android:id="@+id/customizertype"
+    			android:textSize="11sp"
+    			android:textColor="#777777"
+    			android:gravity="right"
+    			android:paddingRight="3dp"/>
+    			
+    			<TableLayout
+   					android:layout_width="fill_parent"
+   					android:layout_height="fill_parent"
+    				android:stretchColumns="1">
+
+    				<TableRow>
+        				<TextView
+           					android:layout_column="1"
+            				android:text="Attack"
+            				android:padding="3dp"/>
+        				<TextView
+           					android:text="A LOT"
+            				android:gravity="right"
+            				android:padding="3dp"
+            				android:id="@+id/cattack"/>
+    				</TableRow>
+
+    				<TableRow>
+        				<TextView
+            				android:layout_column="1"
+            				android:text="Defense"
+            				android:padding="3dp"/>
+        				<TextView
+            				android:text="BERLIN WALL"
+            				android:gravity="right"
+            				android:padding="3dp"
+            				android:id="@+id/cdefense"/>
+    				</TableRow>
+
+    				<TableRow>
+        				<TextView
+            				android:layout_column="1"
+            				android:text="Sp. Attack"
+            				android:padding="3dp"/>
+        				<TextView
+            				android:text="NUKES"
+            				android:gravity="right"
+            				android:padding="3dp"
+            				android:id="@+id/cspatk"/>
+    				</TableRow>
+
+    				<TableRow>
+        				<TextView
+            				android:layout_column="1"
+            				android:text="Sp. Defense"
+            				android:padding="3dp"/>
+        				<TextView
+            				android:text="MORE NUKES"
+            				android:gravity="right"
+            				android:padding="3dp"
+            				android:id="@+id/cspdef"/>
+    				</TableRow>
+
+    				<TableRow>
+        				<TextView
+           					android:layout_column="1"
+            				android:text="Speed"
+            				android:padding="3dp"/>
+        				<TextView
+            				android:text="KEVIN IN BED"
+            				android:gravity="right"
+            				android:padding="3dp"
+            				android:id="@+id/cspeed"/>
+    				</TableRow>
+				</TableLayout>
+    	
+    	</LinearLayout>
+    </LinearLayout>
+    
+    <ScrollView
+    	android:id="@+id/customizerScroll"
+ 		android:layout_width="fill_parent"
+ 		android:layout_height="fill_parent"
+ 		android:orientation="vertical">
+ 		
+ 			<LinearLayout
+ 				android:layout_width="fill_parent"
+ 				android:layout_height="fill_parent"
+ 				android:orientation="vertical">
+ 				
+ 				<TextView
+ 					android:text="EVs have to be less than or equal to 255 each and less than 510 total. IVs have to be less than or equal to 31 each."
+ 					android:layout_width="fill_parent"
+ 					android:layout_height="wrap_content"/>
+ 				
+    	    	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   					android:layout_width="fill_parent"
+   					android:layout_height="fill_parent">
+    				<TableRow>
+        				<TextView
+           					android:layout_column="1"
+            				android:text="Stat"
+            				android:layout_width="60dp"
+            				android:gravity="left"/>
+        				<TextView
+        					android:layout_column="2"
+           					android:text="Base"
+           					android:layout_width="50dp"/>
+           				<TextView
+        					android:layout_column="3"
+           					android:text="IVs"
+           					android:layout_width="50dp"/>
+           				<TextView
+        					android:layout_column="4"
+           					android:text="EVs"
+           					android:layout_width="50dp"/>
+           				<TextView
+        					android:layout_column="5"
+           					android:text="Final"
+           					android:layout_width="60dp"/>
+    				</TableRow>
+
+    				<TableRow>
+        				<TextView
+           					android:layout_column="1"
+            				android:text="Attack"/>
+        				<TextView
+        					android:layout_column="2"
+           					android:id="@+id/atkbase"/>
+						<EditText
+							android:layout_column="3"
+							android:text="0"
+							android:phoneNumber="true"
+							android:id="@+id/atkIV"/>
+						<EditText
+							android:layout_column="4"
+							android:text="0"
+							android:phoneNumber="true"
+							android:id="@+id/atkEV"/>
+           				<TextView
+        					android:layout_column="5"
+           					android:id="@+id/atkFinal"/>
+    				</TableRow>
+    				
+    				<TableRow>
+        				<TextView
+           					android:layout_column="1"
+            				android:text="Defense"/>
+        				<TextView
+        					android:layout_column="2"
+           					android:id="@+id/defbase"/>
+						<EditText
+							android:layout_column="3"
+							android:text="0"
+							android:phoneNumber="true"
+							android:id="@+id/defIV"/>
+						<EditText
+							android:layout_column="4"
+							android:text="0"
+							android:phoneNumber="true"
+							android:id="@+id/defEV"/>
+           				<TextView
+        					android:layout_column="5"
+           					android:id="@+id/defFinal"/>
+    				</TableRow>
+    				
+    				<TableRow>
+        				<TextView
+           					android:layout_column="1"
+            				android:text="Sp. Atk"/>
+        				<TextView
+        					android:layout_column="2"
+           					android:id="@+id/spatkbase"/>
+						<EditText
+							android:layout_column="3"
+							android:text="0"
+							android:phoneNumber="true"
+							android:id="@+id/spatkIV"/>
+						<EditText
+							android:layout_column="4"
+							android:text="0"
+							android:phoneNumber="true"
+							android:id="@+id/spatkEV"/>
+           				<TextView
+        					android:layout_column="5"
+           					android:id="@+id/spatkFinal"/>
+    				</TableRow>
+    				
+    				<TableRow>
+        				<TextView
+           					android:layout_column="1"
+            				android:text="Sp. Def"/>
+        				<TextView
+        					android:layout_column="2"
+           					android:id="@+id/spdefbase"/>
+						<EditText
+							android:layout_column="3"
+							android:text="0"
+							android:phoneNumber="true"
+							android:id="@+id/spdefIV"/>
+						<EditText
+							android:layout_column="4"
+							android:text="0"
+							android:phoneNumber="true"
+							android:id="@+id/spdefEV"/>
+           				<TextView
+        					android:layout_column="5"
+           					android:id="@+id/spdefFinal"/>
+    				</TableRow>
+    				
+    				<TableRow>
+        				<TextView
+           					android:layout_column="1"
+            				android:text="Speed"/>
+        				<TextView
+        					android:layout_column="2"
+           					android:id="@+id/spdbase"/>
+						<EditText
+							android:layout_column="3"
+							android:text="0"
+							android:phoneNumber="true"
+							android:id="@+id/spdIV"/>
+						<EditText
+							android:layout_column="4"
+							android:text="0"
+							android:phoneNumber="true"
+							android:id="@+id/spdEV"/>
+           				<TextView
+        					android:layout_column="5"
+           					android:id="@+id/spdFinal"/>
+    				</TableRow>
+    				
+    				<TableRow>
+        				<TextView
+           					android:layout_column="1"
+            				android:text="HP"/>
+        				<TextView
+        					android:layout_column="2"
+           					android:id="@+id/hpbase"/>
+						<EditText
+							android:layout_column="3"
+							android:text="0"
+							android:phoneNumber="true"
+							android:id="@+id/hpIV"/>
+						<EditText
+							android:layout_column="4"
+							android:text="0"
+							android:phoneNumber="true"
+							android:id="@+id/hpEV"/>
+           				<TextView
+        					android:layout_column="5"
+           					android:id="@+id/hpFinal"/>
+    				</TableRow>
+    				
+    				<TableRow>
+        				<TextView
+           					android:layout_column="1"
+            				android:text="Totals:"/>
+        				<TextView
+        					android:layout_column="2"
+           					android:id="@+id/baseTotal"/>
+						<TextView
+							android:layout_column="3"
+							android:id="@+id/IVTotal"/>
+						<TextView
+							android:layout_column="4"
+							android:id="@+id/EVtotal"/>
+           				<TextView
+        					android:layout_column="5"
+           					android:id="@+id/statTotal"/>
+    				</TableRow>
+				</TableLayout>
+				
+				
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="35dp"/>
+				<TextView
+					android:text="Held Item"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"/>
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="10dp"/>
+				<Spinner
+					android:id="@+id/itemSpinner"
+					android:prompt="@string/spinner"
+					android:text="@string/spinner"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"/>
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="10dp"/>
+				<TextView
+					android:id="@+id/itemDescription"
+					android:text="Choose an item and the effect will appear here."
+					android:layout_width="fill_parent"
+					android:layout_height="35dp"/>
+					
+					
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="10dp"/>
+				<TextView
+					android:text="Nature"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"/>
+				<Spinner
+					android:id="@+id/natureSpinner"
+					android:prompt="@string/natureSpinner"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"/>
+					
+					
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="35dp"/>
+				<TextView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:text="Gender"/>
+				<Spinner
+					android:id="@+id/genderSpinner"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:prompt="@string/genderPrompt"/>
+					
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="35dp"/>
+				<TextView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textSize="20sp"
+					android:text="Attacks"/>
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="10dp"/>
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="fill_parent"
+					android:layout_height="150dp">
+					<TextView
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="Attack 1"/>
+					<Spinner
+						android:id="@+id/attackSpinner1"
+						android:prompt="@string/AttackPrompt"
+						android:text="@string/AttackPrompt"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"/>
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+						<LinearLayout
+							android:orientation="vertical"
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:layout_weight="2">
+							<TextView
+								android:id="@+id/power1"
+								android:text="Power"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"/>
+							<TextView
+								android:id="@+id/acc1"
+								android:text="Accuracy"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"/>
+							<TextView
+								android:id="@+id/pp1"
+								android:text="PP"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"/>
+						</LinearLayout>
+						<TextView
+							android:id="@+id/attackDesc1"
+							android:text="Choose an attack and its description will appear here."
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:layout_weight="1"/>
+						<TextView
+							android:id="@+id/attackType1"
+							android:text="DURR"
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:layout_weight="2"/>
+					</LinearLayout>
+				</LinearLayout>
+				
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="10dp"/>
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="fill_parent"
+					android:layout_height="150dp">
+					<TextView
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="Attack 2"/>
+					<Spinner
+						android:id="@+id/attackSpinner2"
+						android:prompt="@string/AttackPrompt"
+						android:text="@string/AttackPrompt"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"/>
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+						<LinearLayout
+							android:orientation="vertical"
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:layout_weight="2">
+							<TextView
+								android:id="@+id/power2"
+								android:text="Power"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"/>
+							<TextView
+								android:id="@+id/acc2"
+								android:text="Accuracy"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"/>
+							<TextView
+								android:id="@+id/pp2"
+								android:text="PP"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"/>
+						</LinearLayout>
+						<TextView
+							android:id="@+id/attackDesc2"
+							android:text="Choose an attack and its description will appear here."
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:layout_weight="1"/>
+						<TextView
+							android:id="@+id/attackType2"
+							android:text="DURR"
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:layout_weight="2"/>
+					</LinearLayout>
+				</LinearLayout>
+				
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="10dp"/>
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="fill_parent"
+					android:layout_height="150dp">
+					<TextView
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="Attack 3"/>
+					<Spinner
+						android:id="@+id/attackSpinner3"
+						android:prompt="@string/AttackPrompt"
+						android:text="@string/AttackPrompt"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"/>
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+						<LinearLayout
+							android:orientation="vertical"
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:layout_weight="2">
+							<TextView
+								android:id="@+id/power3"
+								android:text="Power"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"/>
+							<TextView
+								android:id="@+id/acc3"
+								android:text="Accuracy"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"/>
+							<TextView
+								android:id="@+id/pp3"
+								android:text="PP"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"/>
+						</LinearLayout>
+						<TextView
+							android:id="@+id/attackDesc3"
+							android:text="Choose an attack and its description will appear here."
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:layout_weight="1"/>
+						<TextView
+							android:id="@+id/attackType3"
+							android:text="DURR"
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:layout_weight="2"/>
+					</LinearLayout>
+				</LinearLayout>
+				
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="10dp"/>
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="fill_parent"
+					android:layout_height="150dp">
+					<TextView
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="Attack 4"/>
+					<Spinner
+						android:id="@+id/attackSpinner4"
+						android:prompt="@string/AttackPrompt"
+						android:text="@string/AttackPrompt"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"/>
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+						<LinearLayout
+							android:orientation="vertical"
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:layout_weight="2">
+							<TextView
+								android:id="@+id/power4"
+								android:text="Power"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"/>
+							<TextView
+								android:id="@+id/acc4"
+								android:text="Accuracy"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"/>
+							<TextView
+								android:id="@+id/pp4"
+								android:text="PP"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"/>
+						</LinearLayout>
+						<TextView
+							android:id="@+id/attackDesc4"
+							android:text="Choose an attack and its description will appear here."
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:layout_weight="1"/>
+						<TextView
+							android:id="@+id/attackType4"
+							android:text="DURR"
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:layout_weight="2"/>
+					</LinearLayout>
+				</LinearLayout>
+				
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="10dp"/>
+					
+				<TextView
+					android:text="Ability"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"/>
+				 
+				<Spinner
+					android:id="@+id/AbiliSpinner"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"/>
+				
+				<Button
+					android:id="@+id/customizerdonebutton"
+					android:text="All done!"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:onClick="doneButtonClicked"/>
+				
+				<Gallery
+					android:id="@+id/customizerGallery"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"/>
+			</LinearLayout>
+    </ScrollView>
+</LinearLayout>

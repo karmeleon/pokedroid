@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+ 	<android.opengl.GLSurfaceView
+  		android:id="@+id/glpanel"
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"/>
+		
+	<LinearLayout
+ 		xmlns:android="http://schemas.android.com/apk/res/android"
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"
+  		android:orientation="vertical">
+  
+  		<ImageView
+  			android:layout_width="168dp"
+  			android:layout_height="168dp"
+  			android:src="@drawable/icon"
+  			android:layout_gravity="center_horizontal|center_vertical"
+  			android:scaleType="fitXY"/>
+  
+  		<Button
+  			android:text="Single Player"
+  			android:onClick="onQBSelect"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"/>
+  	
+  		<!--   <Button
+  			android:text="Multiplayer"
+  			android:onClick="onMPSelect"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"/> -->
+	
+  		<Button
+  			android:text="Team Manager"
+  			android:onClick="onBuilderSelect"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"/>
+  			
+  		<Button
+  			android:text="Settings"
+  			android:onClick="onSettingsSelect"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"/>
+  			
+  		<Button
+  			android:text="About"
+  			android:onClick="about"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"/>
+  			
+  		<Button
+  			android:text="Submit a bug report"
+  			android:onClick="bugReport"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"/>
+  		<Button
+  			android:text="Back to safety!"
+  			android:onClick="onExperimental"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"/>
+		</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.games.pokedroid"
+    android:versionCode="1"
+    android:versionName="1.0">
+    <uses-sdk android:targetSdkVersion="9" android:minSdkVersion="7"/>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"></uses-permission>
+
+    <application
+    	android:icon="@drawable/icon"
+    	android:theme="@android:style/Theme.NoTitleBar"
+    	android:label="@string/app_name">
+        <activity
+        	android:name=".PokeDroid"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+        	android:name=".DeviceListActivity"
+        	android:label="@string/select_device"
+            android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="portrait"/>
+        <activity
+        	android:name="BuilderActivity"
+        	android:screenOrientation="portrait"/>
+        <activity
+        	android:name=".multiplayer.MPMenu"
+        	android:screenOrientation="portrait"/>
+        <activity
+        	android:name=".game.GUIBattle"
+        	android:screenOrientation="portrait"/>
+        <activity
+        	android:name="PokemonCustomizer"
+        	android:screenOrientation="portrait"/>
+        <activity
+        	android:name="OptionsMenu"
+        	android:theme="@style/theme"
+        	android:screenOrientation="portrait"/>
+        <activity
+        	android:name="PreBattleScreen"
+        	android:screenOrientation="portrait"/>
+        <activity
+        	android:name="TeamManager"
+        	android:screenOrientation="portrait"/>
+        <activity
+        	android:name="ExperimentalMenu"
+        	android:screenOrientation="portrait"/>
+        <activity
+        	android:name="SPMenu"
+        	android:screenOrientation="portrait"/>
+        <meta-data
+        	android:name="com.google.android.backup.api_key"
+        	android:value="AEdPqrEAAAAIbjl2qYrxcwMq9TZ7u1Mpc3GK8kYPlqmBVg7kQQ"/>
+    </application>
+</manifest>

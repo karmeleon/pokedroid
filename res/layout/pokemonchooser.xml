@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:orientation="vertical">	<!-- main LL -->
+    <LinearLayout
+    	android:layout_height="160dp"
+    	android:layout_width="fill_parent"
+    	android:orientation="horizontal">	<!-- top half of screen -->
+    	
+    	<LinearLayout
+    		android:orientation="vertical"
+    		android:layout_width="128dp"
+    		android:layout_height="fill_parent">	<!-- top left -->
+    		<ImageView
+    			android:layout_height="128dp"
+    			android:layout_width="128dp"
+    			android:scaleType="fitXY"
+    			android:src="@drawable/nixon"
+    			android:id="@+id/imageView1"/>
+    		
+    		<TextView
+    			android:layout_height="12dp"
+    			android:textSize="11sp"
+    			android:layout_width="fill_parent"
+    			android:id="@+id/idno"
+    			android:text="#9001"/>
+    			
+    	</LinearLayout>	<!-- top left -->
+    	
+    	<LinearLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:orientation="vertical">	<!-- top right -->
+    		
+    		<TextView
+    			android:layout_width="fill_parent"
+    			android:layout_height="18dp"
+    			android:text="RICHARD NIXON"
+    			android:id="@+id/buildername"/>
+    			
+    		<TextView
+    			android:layout_width="fill_parent"
+    			android:layout_height="13dp"
+    			android:text="BADASS TYPE"
+    			android:id="@+id/buildertype"
+    			android:textSize="11sp"
+    			android:textColor="#777777"
+    			android:gravity="right"
+    			android:paddingRight="3dp"/>
+    			
+    			<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   					android:layout_width="fill_parent"
+   					android:layout_height="fill_parent"
+    				android:stretchColumns="1">
+
+    				<TableRow>
+        				<TextView
+           					android:layout_column="1"
+            				android:text="Attack"
+            				android:padding="3dp"/>
+        				<TextView
+           					android:text="A LOT"
+            				android:gravity="right"
+            				android:padding="3dp"
+            				android:id="@+id/attack"/>
+    				</TableRow>
+
+    				<TableRow>
+        				<TextView
+            				android:layout_column="1"
+            				android:text="Defense"
+            				android:padding="3dp"/>
+        				<TextView
+            				android:text="BERLIN WALL"
+            				android:gravity="right"
+            				android:padding="3dp"
+            				android:id="@+id/defense"/>
+    				</TableRow>
+
+    				<TableRow>
+        				<TextView
+            				android:layout_column="1"
+            				android:text="Sp. Attack"
+            				android:padding="3dp"/>
+        				<TextView
+            				android:text="NUKES"
+            				android:gravity="right"
+            				android:padding="3dp"
+            				android:id="@+id/spatk"/>
+    				</TableRow>
+
+    				<TableRow>
+        				<TextView
+            				android:layout_column="1"
+            				android:text="Sp. Defense"
+            				android:padding="3dp"/>
+        				<TextView
+            				android:text="MORE NUKES"
+            				android:gravity="right"
+            				android:padding="3dp"
+            				android:id="@+id/spdef"/>
+    				</TableRow>
+
+    				<TableRow>
+        				<TextView
+           					android:layout_column="1"
+            				android:text="Speed"
+            				android:padding="3dp"/>
+        				<TextView
+            				android:text="MINUTEMAN"
+            				android:gravity="right"
+            				android:padding="3dp"
+            				android:id="@+id/speed"/>
+    				</TableRow>
+				</TableLayout>
+    	
+    	</LinearLayout>	<!-- top right -->
+    </LinearLayout>
+    <LinearLayout
+    	android:layout_height="fill_parent"
+    	android:layout_width="fill_parent"
+    	android:orientation="vertical">
+    	<ListView
+    		android:id="@android:id/list"
+    		android:layout_height="fill_parent"
+    		android:layout_width="fill_parent"
+    		android:layout_weight="1"
+    		android:fastScrollEnabled="true"/>
+   		<Button
+    		android:id="@+id/doneButton"
+    		android:layout_height="fill_parent"
+    		android:layout_width="fill_parent"
+    		android:layout_weight="7"
+    		android:onClick="onButtonClicked"
+    		android:text="I'm all done!"/>
+    </LinearLayout>
+</LinearLayout>	<!-- main LL -->

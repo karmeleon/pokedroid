@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+  
+  <com.games.pokedroid.gfx.Panel
+  	android:id="@+id/topPanel"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:layout_weight="7"
+  	android:gravity="top"/>
+  	
+  <TextView
+  	android:id="@+id/battleText"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:layout_weight="9"
+  	android:paddingBottom="7dp"
+  	android:paddingTop="7dp"
+  	android:paddingLeft="21dp"
+  	android:paddingRight="21dp"
+  	android:textSize="16sp"
+  	android:textColor="#FFFFFF"
+  	android:background="@drawable/textbox"/>
+  	
+  <com.games.pokedroid.BottomPanel
+  	android:id="@+id/attackView"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:layout_weight="6"
+  	android:gravity="bottom"/>
+</LinearLayout>

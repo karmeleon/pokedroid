@@ -1,0 +1,16 @@
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="first_preferencescreen"
+    android:title="Settings">
+    <CheckBoxPreference
+    	android:key="nixonmode"
+        android:title="Nixon Mode!"
+        android:summaryOff="Aw. Loser."
+        android:summaryOn="Yay! You know where it's at."
+        android:persistent="true"/>
+    <EditTextPreference
+    	android:key="name"
+    	android:title="Name"
+    	android:summary="What your name is in-game"
+    	android:persistent="true"/>
+</PreferenceScreen> 

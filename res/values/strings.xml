@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PokéDroid</string>
+
+    <!--  BluetoothChat -->
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving multiplayer.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected: </string>
+    <string name="title_not_connected">not connected</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <!-- Options Menu -->
+    <string name="connect">Connect a device</string>
+    <string name="discoverable">Make discoverable</string>
+    <string name="spinner">Choose an item...</string>
+    <string-array name="SpinnerArray">
+        <item>No Item</item>
+		<item>Absorb Bulb</item>
+		<item>Adamant Orb</item>
+		<item>Aguav Berry</item>
+		<item>Air Balloon</item>
+		<item>Amulet Coin</item>
+		<item>Apicot Berry</item>
+		<item>Aspear Berry</item>
+		<item>Babiri Berry</item>
+		<item>Beserk Gene</item>
+		<item>Big Root</item>
+		<item>Binding Band</item>
+		<item>Black Sludge</item>
+		<item>Bluk Berry</item>
+		<item>Brightpowder</item>
+		<item>Bug Gem</item>
+		<item>Cell Battery</item>
+		<item>Charti Berry</item>
+		<item>Cheri Berry</item>
+		<item>Chesto Berry</item>
+		<item>Chilan Berry</item>
+		<item>Choice Band</item>
+		<item>Choice Scarf</item>
+		<item>Choice Specs</item>
+		<item>Chople Berry</item>
+		<item>Coba Berry</item>
+		<item>Colbur Berry</item>
+		<item>Cornn Berry</item>
+		<item>Custap Berry</item>
+		<item>Damp Rock</item>
+		<item>Dark Gem</item>
+		<item>DeepSeaScale</item>
+		<item>DeepSeaTooth</item>
+		<item>Destiny Knot</item>
+		<item>Draco Plate</item>
+		<item>Dragon Gem</item>
+		<item>Dread Plate</item>
+		<item>Durin Berry</item>
+		<item>Earth Plate</item>
+		<item>Eject Button</item>
+		<item>Electric Gem</item>
+		<item>Enigma Berry</item>
+		<item>Eviolite</item>
+		<item>Expert Belt</item>
+		<item>Fighting Gem</item>
+		<item>Figy Berry</item>
+		<item>Fire Gem</item>
+		<item>Fist Plate</item>
+		<item>Flame Orb</item>
+		<item>Flame Plate</item>
+		<item>Float Stone</item>
+		<item>Flying Gem</item>
+		<item>Focus Band</item>
+		<item>Focus Sash</item>
+		<item>Full Incense</item>
+		<item>Ganlon Berry</item>
+		<item>Ghost Gem</item>
+		<item>Grass Gem</item>
+		<item>Grepa Berry</item>
+		<item>Grip Claw</item>
+		<item>Griseous Orb</item>
+		<item>Ground Gem</item>
+		<item>Haban Berry</item>
+		<item>Heat Rock</item>
+		<item>Hondew Berry</item>
+		<item>Iapapa Berry</item>
+		<item>Ice Gem</item>
+		<item>Icicle Plate</item>
+		<item>Icy Rock</item>
+		<item>Insect Plate</item>
+		<item>Iron Ball</item>
+		<item>Iron Plate</item>
+		<item>Jaboca Berry</item>
+		<item>Kasib Berry</item>
+		<item>Kebia Berry</item>
+		<item>Kelpsy Berry</item>
+		<item>Kings Rock</item>
+		<item>Lagging Tail</item>
+		<item>Lansat Berry</item>
+		<item>Lax Incense</item>
+		<item>Leftovers</item>
+		<item>Leppa Berry</item>
+		<item>Liechi Berry</item>
+		<item>Life Orb</item>
+		<item>Light Ball</item>
+		<item>Light Clay</item>
+		<item>Luck Incense</item>
+		<item>Lum Berry</item>
+		<item>Lustrous Orb</item>
+		<item>Macho Brace</item>
+		<item>Magost Berry</item>
+		<item>Mago Berry</item>
+		<item>Meadow Plate</item>
+		<item>Mental Herb</item>
+		<item>Metal Powder</item>
+		<item>Metronome</item>
+		<item>Micle Berry</item>
+		<item>Mind Plate</item>
+		<item>Muscle Band</item>
+		<item>Nanab Berry</item>
+		<item>Nomel Berry</item>
+		<item>Normal Gem;</item>
+		<item>Occa Berry</item>
+		<item>Odd Incense</item>
+		<item>Oran Berry</item>
+		<item>Pamtre Berry</item>
+		<item>Passho Berry</item>
+		<item>Payapa Berry</item>
+		<item>Pecha Berry</item>
+		<item>Persim Berry</item>
+		<item>Petaya Berry</item>
+		<item>Pinap Berry</item>
+		<item>Poison Gem</item>
+		<item>Pomeg Berry</item>
+		<item>Power Anklet</item>
+		<item>Power Band</item>
+		<item>Power Belt</item>
+		<item>Power Bracer</item>
+		<item>Power Herb</item>
+		<item>Power Lens</item>
+		<item>Power Weight</item>
+		<item>Psychic Gem</item>
+		<item>Pure Incense</item>
+		<item>Qualot Berry</item>
+		<item>Quick Claw</item>
+		<item>Rabuta Berry</item>
+		<item>Rawst Berry</item>
+		<item>Razz Berry</item>
+		<item>Red Card</item>
+		<item>Rindo Berry</item>
+		<item>Ring Target</item>
+		<item>Rocky Helmet</item>
+		<item>Rock Gem</item>
+		<item>Rock Incense</item>
+		<item>Rose Incense</item>
+		<item>Rowap Berry</item>
+		<item>Salac Berry</item>
+		<item>Scope Lens</item>
+		<item>Sea Incense</item>
+		<item>Shed Shell</item>
+		<item>Shell Bell</item>
+		<item>Shuca Berry</item>
+		<item>Sitrus Berry</item>
+		<item>Sky Plate</item>
+		<item>Smoke Ball</item>
+		<item>Smooth Rock</item>
+		<item>Soul Dew</item>
+		<item>Spelon Berry</item>
+		<item>Splash Plate</item>
+		<item>Spooky Plate</item>
+		<item>Starf Berry</item>
+		<item>Steel Gem</item>
+		<item>Sticky Barb</item>
+		<item>Stone Plate</item>
+		<item>Tamato Berry</item>
+		<item>Tanga Berry</item>
+		<item>Thick Club</item>
+		<item>Toxic Orb</item>
+		<item>Toxic Plate</item>
+		<item>Wacan Berry</item>
+		<item>Water Gem</item>
+		<item>Watmel Berry</item>
+		<item>Wave Incense</item>
+		<item>Wepear Berry</item>
+		<item>White Herb</item>
+		<item>Wide Lens</item>
+		<item>Wiki Berry</item>
+		<item>Wise Glasses</item>
+		<item>Yache Berry</item>
+		<item>Zap Plate</item>
+		<item>Zoom Lens</item>
+    </string-array>
+    <string name="natureSpinner">Choose a nature...</string>
+    <string-array name="natureSpinnerArray">
+		<item>Adamant</item>
+		<item>Bashful</item>
+		<item>Bold</item>
+		<item>Brave</item>
+		<item>Calm</item>
+		<item>Careful</item>
+		<item>Docile</item>
+		<item>Gentle</item>
+		<item>Hardy</item>
+		<item>Hasty</item>
+		<item>Impish</item>
+		<item>Jolly</item>
+		<item>Lax</item>
+		<item>Lonely</item>
+		<item>Mild</item>
+		<item>Modest</item>
+		<item>Naïve</item>
+		<item>Naughty</item>
+		<item>Quiet</item>
+		<item>Quirky</item>
+		<item>Rash</item>
+		<item>Relaxed</item>
+		<item>Sassy</item>
+		<item>Serious</item>
+		<item>Timid</item>
+    </string-array>
+    <string name="AttackPrompt">Choose an attack.</string>
+    <string-array name="AttackPromptArray">
+        <item>And again.</item>
+        <item>String Shot</item>
+        <item>Harden</item>
+    </string-array>
+    <string name="genderPrompt">Gender</string>
+    <string-array name="genderPromptArray">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="SinglePlayer">Quick Battle</string>
+    <string name="MultiPlayer">Multiplayer</string>
+    <string name="Pokedex">Build Team</string>
+    <string-array name="ExitMessages">
+        <item>If I were your boss, I\'d deathmatch ya in a second.</item>
+        <item>You want to quit? Then, thou hast lost an eighth!</item>
+        <item>Don\'t go now, there\'s a dimensional shambler waiting at the...uh...ADB prompt!</item>
+        <item>Get outta here and go back to your boring apps.</item>
+        <item>Look, bud. You leave now and you forfeit your body count.</item>
+        <item>Just leave. When you come back, I\'ll be waiting for you with a bat.</item>
+        <item>You\'re lucky I don\'t smack you for thinking about leaving.</item>
+        <item>Please don\'t leave, there\'re more trainers to toast!</item>
+        <item>Let\'s beat it--this is turning into a bloodbath!</item>
+        <item>I wouldn\'t leave if I were you. Angry Birds is much worse.</item>
+        <item>You\'re trying to say you like Angry Birds better than me, aren\'t you?</item>
+        <item>Don\'t leave now! There\'s a Giratina around that corner!</item>
+        <item>Ya know, next time you come in here, I\'m gonna toast ya.</item>
+        <item>Go ahead and leave. See if I care.</item>
+    </string-array>
+    
+    <string name="crash_toast_text">Aww. Crash. A bug report has been automagically sent. No personal data was collected (I promise!)</string>
+</resources>

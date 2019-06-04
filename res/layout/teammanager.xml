@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<com.games.pokedroid.gfx.MainMenuPanel
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:id="@+id/mainmenupanel"/>
+	<LinearLayout
+  		xmlns:android="http://schemas.android.com/apk/res/android"
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"
+  		android:orientation="vertical">
+  		<ImageView
+  			android:layout_width="168dp"
+  			android:layout_height="168dp"
+  			android:src="@drawable/icon"
+  			android:layout_gravity="center_horizontal|center_vertical"
+  			android:scaleType="fitXY"/>
+  		<Button
+  			android:text="Make a new team"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:onClick="onNewTeam"/>
+  		<Button
+  			android:text="Modify an existing team"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:onClick="onEditTeam"/>
+  		<Button
+  			android:text="Delete a team"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:onClick="onDeleteTeam"/>
+	</LinearLayout>
+</RelativeLayout>
